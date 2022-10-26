@@ -9,7 +9,12 @@
 <title>SAMPLE SITE</title>
 </head>
 <body>
-    
+<div class="">
+<?php if(function_exists('bcn_display'))
+{
+bcn_display();
+}?>
+</div>
     <div id="cont_first" class="container">
         <div id="contents">
             <div id="cont_left">
