@@ -24,7 +24,7 @@
             <!-- </div> -->
         <!-- </div> -->
     <!-- </header> -->
-    <div class="">
+    <div class="pan">
 <?php if(function_exists('bcn_display'))
 {
 bcn_display();
@@ -39,7 +39,6 @@ bcn_display();
    <?php the_content(); ?>
 <?php endwhile; endif; ?>
             </div>
-            <?php get_sidebar(); ?>
         </div>
     </div>
     <!-- <footer> -->

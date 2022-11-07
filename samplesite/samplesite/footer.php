@@ -2,21 +2,6 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript">
-$(function() {
-    $('#slide').slideshow({
-        autoSlide    : true,
-        effect       : 'fade',
-        type         : 'repeat',
-        interval     : 2000,
-        duration     : 500,
-        imgHoverStop : true,
-        navHoverStop : true
-    });
-});
-</script>
 <!-- <title>SAMPLE SITE</title> -->
  <link rel="stylesheet" href="<?php echo home_url(); ?>/style.css">
 </head>

@@ -3,21 +3,6 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript">
-$(function() {
-    $('#slide').slideshow({
-        autoSlide    : true,
-        effect       : 'fade',
-        type         : 'repeat',
-        interval     : 2000,
-        duration     : 500,
-        imgHoverStop : true,
-        navHoverStop : true
-    });
-});
-</script>
 <!-- <title>SAMPLE SITE</title> -->
  <link rel="stylesheet" href="<?php echo home_url(); ?>/style.css">
 </head>
@@ -67,11 +52,11 @@ $(function() {
                 <div class="information">
                     <h2>INFORMATION</h2>
                     <dl>
-                    <?php $infoPosts = get_posts('numberposts=4&category=4,5'); foreach($infoPosts as $post): ?> 
+                    <?php $infoPosts = get_posts('numberposts=4&category=1,4,5'); foreach($infoPosts as $post): ?> 
                         <dt><?php the_time('Y-m-d'); ?></dt>
                         <dd>
-                        <span class="tab tag_<?php $cat = get_the_category(); $cat=$cat[0]; {echo $cat->$slug;} ?>">
-                        <?php $cat = get_the_category(); $cat=$cat[0]; {echo $cat->$cat_name; }?></span>
+                        <span class="tab tag_<?php $cat = get_the_category(); $cat=$cat[0]; { echo $cat->slug; } ?>">
+                        <?php $cat = get_the_category(); $cat = $cat[0]; {echo $cat->cat_name; } ?></span>
                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>を掲載しました。
                         </dd>
 
@@ -83,7 +68,7 @@ $(function() {
                 <div class="information">
                     <h2>BLOG</h2>
                     <dl>
-                    <?php $infoPosts = get_posts('numberposts=4&category=1'); foreach($infoPosts as $post): ?>
+                    <?php $infoPosts = get_posts('numberposts=4&category=3'); foreach($infoPosts as $post): ?>
                         <dt><?php the_time('Y-m-d'); ?></dt>
                         <dd>
                         <div class="b_img">
@@ -96,8 +81,8 @@ $(function() {
                          <?php endforeach; ?>
                     </dl>
                 </div>
-            </div>       
-            <?php get_sidebar(); ?>
+            </div>
+            <?php get_sidebar(); ?>       
         </div>
     </div>
     <!-- <footer> -->

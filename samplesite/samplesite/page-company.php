@@ -9,7 +9,7 @@
 <title>SAMPLE SITE</title>
 </head>
 <body>
-<div class="">
+<div class="pan">
 <?php if(function_exists('bcn_display'))
 {
 bcn_display();
@@ -51,7 +51,6 @@ bcn_display();
     	            </tr>
                 </table>
             </div>
-            <?php get_sidebar(); ?>
             </div>
         </div>
     </div>

@@ -423,6 +423,12 @@ header h1 a:hover {
     border-bottom: 1px dashed #ddd;
 }
 
+#information{
+    width:940px;
+    margin:0 auto;
+    margin-top:70px;
+}
+
 
 .sub-menu {
 }
@@ -549,6 +555,10 @@ footer li a:hover {
     background:#538ac7;
     color: #fff;
 }
+.tag_news{
+    background-color: pink;
+    color: #fff;
+}
 .information dd:after{
     display: block;
     clear: both;
@@ -591,3 +601,8 @@ footer li a:hover {
 }
 
 /* WP化に伴う追加css-------------end */
+
+.pan{
+    width: 940px;
+    margin: 0 auto;
+}
