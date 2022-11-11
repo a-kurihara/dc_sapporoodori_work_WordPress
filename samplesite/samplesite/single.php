@@ -39,6 +39,7 @@ bcn_display();
    <?php the_content(); ?>
 <?php endwhile; endif; ?>
             </div>
+            <?php get_sidebar(); ?>
         </div>
     </div>
     <!-- <footer> -->

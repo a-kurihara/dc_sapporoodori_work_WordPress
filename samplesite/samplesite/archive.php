@@ -31,6 +31,9 @@ bcn_display();
 }?>
 </div>
 <div class="information" id="information">
+<div id="cont_first" class="container">
+        <div id="contents">
+            <div id="cont_left">
     <h2>INFORMATION</h2>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <dl>
@@ -44,9 +47,10 @@ bcn_display();
         <?php endwhile; endif; ?>
         <?php wp_pagenavi(); ?>
         </div>
-        </div>
-        </div>
-    </div>
+        <?php get_sidebar(); ?>
+</div>
+</div>
+</div>
     <!-- <footer> -->
         <!-- <ul> -->
             <!-- <li class="home"><a href="index.html">TOP</a></li> -->
