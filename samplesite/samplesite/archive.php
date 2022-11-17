@@ -34,16 +34,6 @@ bcn_display();
 <div id="cont_first" class="container">
         <div id="contents">
             <div id="cont_left">
-                <?php
-$categories = get_terms( 'category', array(
-'orderby' => 'count',
-'hide_empty' => 0,
-'parent' => get_query_var('cat'),
-) );
-foreach($categories as $value):
-?>
-<p><a href="<?php echo get_category_link($value->term_id); ?>"><?php echo $value->name;?></a></p>
-<?php endforeach; ?>
     <h2>INFORMATION</h2>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <dl>
